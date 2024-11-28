@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+*,*:after, *:before {
+  box-sizing: border-box;
+}
+body {
+  width:100%;
+}
+a {
+  text-decoration:none;
+  color:#333;
+}
+h2 {
+  text-align:center;
+  padding:100px 0 100px 0;
+  color:tomato;
+}
+.slide_book_container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.slide_book {
+  display: flex;
+  position: absolute;
+}
+.slide {
+  width: 150px;
+  height: 220px;
+  margin: 0 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+.slide img {
+  width:100%;
+}
+/*.slider_container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  display: flex;
+  width: max-content;
+  animation: flow 20s linear infinite;
+}
+.slide {
+  margin: 0 15px;
+  text-align: center;
+  line-height: 220px;
+  font-size: 16px;
+  color: #555;
+}
+.slide img {
+  width:100%;
+}
+@keyframes flow {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}*/
+#audiobook {
+  width:100%;
+}
+#book_box {
+  width:100%;
+  margin: 0 auto;
+}
+#book_box ul {
+  text-align:center;
+}
+#book_box ul li {
+  width:50%;
+  float:left;
+  display:none;
+}
+#book_box ul li img {
+  width:100%;
+}
+#book_box h4 {
+  color:tomato;
+}
+
+.more_btn {
+  text-align:center;
+  margin:0 auto;
+  display:block;
+}
+.more_btn button {
+  border:1px solid tomato;
+  font-weight:bold;
+  color:#fff;
+  background:tomato;
+  width:20%;
+  height:50px;
+  cursor:pointer;
+  display:block;
+  text-align:center;
+  margin:0 auto;
+}
+.less_btn {
+  text-align:center;
+  margin:0 auto;
+  display:block;
+}
+.less_btn button {
+  border:1px solid tomato;
+  font-weight:bold;
+  color:#fff;
+  background:tomato;
+  width:20%;
+  height:50px;
+  cursor:pointer;
+  display:none;
+  text-align:center;
+  margin:0 auto;
+}
+@media screen and (min-width:641px) and (max-width:768px) {
+  #book_box ul li {
+    width:33.33%;
+    float:left;
+  }
+  #book_box img {
+    max-width:250px;
+  }
+  #book_box ul li h4 {
+    font-size:1.1rem;
+  }
+  #book_box ul li p {
+    font-size:0.9rem; 
+  }
+}
+
+@media screen and (min-width:769px) {
+  #book_box ul li {
+    width:25%;
+    float:left;
+  }
+  #book_box ul li h4 {
+    font-size:1.3rem;
+    color:tomato;
+  }
+  #book_box ul li p {
+    font-size:1.1rem;
+  }
+  #book_box {
+    width:70%;
+  }
+}
