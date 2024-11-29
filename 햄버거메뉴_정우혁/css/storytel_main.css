@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+body, html {
+  font-family:'Pretendard-Regular';
+}
+*,*:after, *:before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color:#000;
+}
+
+/* 햄버거 */
+.hamburger {
+  position:absolute;
+  top:25px;
+  right:50px;
+  transition:.3s ease-in-out;
+  width:45px;
+  height:40px;
+  border:none;
+  background:none;
+}
+.hamburger span {
+  position:absolute;
+  height:8px;
+  border-radius:4px;
+  width:100%;
+  background:#3d4146;
+  top:0;
+  transition: 0.2s;
+}
+.hamburger span:nth-child(1) {
+  top:0;
+}
+.hamburger span:nth-child(2), .hamburger span:nth-child(3) {
+  top:13px;
+}
+.hamburger span:nth-child(4) {
+  top:26px;
+}
+.hamburger.active span:nth-child(1), .hamburger.active span:nth-child(4) {
+  opacity:0;
+}
+.hamburger.active span:nth-child(2) {
+  transform:rotate(45deg);
+}
+.hamburger.active span:nth-child(3) {
+  transform:rotate(-45deg);
+}
+/* 햄버거 끝 */
+.menu_container.on {
+  display:none;
+}
+#nav ul {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#nav ul.menu li {
+  position:relative;
+  text-align:center;
+  width:100%;
+  font-size:40px;
+}
+#nav ul.menu li a {
+  display:block;
+  width:100%;
+  height:100%;
+  line-height:100px;
+  text-indent:30px;
+}
+#nav ul.menu li a:hover {
+  color:#ff501c;
+}
+#nav ul.menu li .sub a {
+  position:relative;
+  float:left;
+  display:block;
+  width:100%;
+  z-index:999;
+  background:#fff;
+}
+.menu li a {
+  color:#000;
+}
+.sub li a {
+  font-size:25px;
+}
+/* 햄버거 끝 */
+
+#header_top a{
+  display:none;
+}
+#header h1 {
+  text-align:center;
+  padding:20px 0;
+}
+#header h1 img {
+  width:190px;
+  height:50px;
+}
+.head {
+  width:100%;
+  text-align:center;
+}
+.ham_line {
+  width:80%;
+  border:2.5px solid #ff501c;
+  border-radius:10px;
+  transform:translate(13%, 90%);
+  margin-top:20px;
+}
+.join {
+  font-size:40px;
+  margin-top:20px;
+}
+/* 메뉴 검색창 */
+.search_box {
+  text-align:center;
+  margin-top:25px;
+}
+.search_txt {
+  width:80%;
+  height:60px;
+  border-radius:80px;
+  margin:0 auto;
+}
+.search_btn {
+  width:40px;
+  height:40px;
+  background:#fff;
+  border:none;
+  margin-top:25px;
+  position:relative;
+  top:8px;
+}
+input:focus {
+  border:none;
+}
+input {
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size:30px;
+}
+input.search_txt::-webkit-input-placeholder{
+  background-image: url(../img/search.png);
+  background-size:30px;
+  background-position-x:520px;
+  background-position-y:6px;
+  background-repeat: no-repeat;
+  line-height:10px;
+  text-indent:200px;
+  font-size:30px;
+  color:#ccc;
+  transform:translateY(2px);
+}
+/* 메뉴 검색창 */
