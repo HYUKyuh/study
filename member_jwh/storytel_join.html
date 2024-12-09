@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/storytel_join.css">
+  <script src="js/storytel_join.js"></script>
+</head>
+<body>
+  <div id="join">
+   
+    <form name="form" class="form" method="post" action="result.php" onsubmit="return validateForm()">
+      <fieldset>
+        <p class="s_logo"><img src="img/storytel_join_logo.jpg" alt="join_logo"></p><br>
+
+        <div class="join_txt">
+        <h2>신규 회원가입</h2><br>
+        <legend>회원 정보 입력</legend>
+        </div>
+        <div id="join_form">
+          
+        <div class="join_info">
+          <label for="id"></label>
+          <input type="text" placeholder="아이디" name="id" id="id">
+
+        <div id="pw1">
+          <label for="pwd1"></label>
+          <input type="password" placeholder="비밀번호" maxLength="20" name="pass1" id="pwd">
+        </div>
+
+        <div id="pw2">
+          <label for="pwd2"></label>
+          <input type="password" placeholder="비밀번호 확인" maxLength="20" name="pass2" id="pwd">
+        </div>
+
+        <div id="email">
+          <label for="email"></label>
+          <input type="email" placeholder="이메일" id="email" name="email">
+        </div>
+
+        <div id="tel">
+          <label for="ph"></label>
+          <input type="tel" placeholder="연락처" maxlength="11" name="tel" id="ph">
+        </div>
+
+        <div id="join_btn">
+          <input type="submit" value="가입하기" class="btn">
+        </div>
+      </div>
+      </div>
+
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
